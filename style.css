@@ -1,0 +1,61 @@
+/* Background abu abu soft */
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;   /* abu muda */
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+/* Card putih dengan border abu */
+.container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(100, 100, 100, 0.2); 
+    text-align: center;
+    border: 3px solid #d1d1d1;   /* abu lembut */
+}
+
+/* Judul abu gelap */
+h2 {
+    color: #4a4a4a;   /* abu gelap */
+    margin-bottom: 20px;
+}
+
+/* Style input abu */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #bfbfbf;  /* abu */
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Tombol abu */
+button {
+    padding: 12px 30px;
+    background: #6e6e6e;     /* abu gelap */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Hover tombol */
+button:hover {
+    background: #555;       /* abu lebih gelap */
+}
+
+/* Hasil output */
+.hasil {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;    /* abu gelap */
+    font-weight: bold;
+    line-height: 1.6em;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Mahasiswa & Usia</title>
+
+    <!-- Memanggil file CSS yang dipisah -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Data Mahasiswa & Usia</h2>
+
+    <input type="text" id="nama" placeholder="Nama">
+    <input type="text" id="nim" placeholder="NIM">
+    <input type="number" min="0" id="tahun" placeholder="Tahun Lahir">
+
+    <button onclick="tampilkan()">Tampilkan</button>
+
+    <div id="hasil" class="hasil"></div>
+</div>
+
+<script>
+function tampilkan() {
+    let nama = document.getElementById("nama").value;
+    let nim = document.getElementById("nim").value;
+    let tahun = document.getElementById("tahun").value;
+
+    let tahunSekarang = new Date().getFullYear();
+    let usia = tahunSekarang - tahun;
+
+    document.getElementById("hasil").innerHTML =
+    `Nama : ${nama} <br>
+     NIM : ${nim} <br>
+     Usia : ${usia} tahun`;
+}
+</script>
+
+</body>
+</html>
